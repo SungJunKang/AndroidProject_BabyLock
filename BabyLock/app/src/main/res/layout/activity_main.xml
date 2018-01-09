@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kr.co.ana.babylock6.MainActivity"
+    android:background="@drawable/main_activation"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/main_lock"
+            android:layout_width="150dp"
+            android:layout_height="137dp"
+            android:src="@drawable/main_lo"
+            android:layout_marginTop="195dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="Onclick"/>
+
+        <ImageView
+            android:layout_marginTop="8dp"
+            android:id="@+id/main_list"
+            android:layout_width="150dp"
+            android:layout_height="130dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/main_playlist"
+            android:layout_marginLeft="20dp"
+            android:onClick="Onclick"/>
+
+        <ImageView
+            android:id="@+id/main_tutorial"
+            android:layout_width="150dp"
+            android:layout_height="130dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/main_tutorial"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:onClick="Onclick"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/main_unlock"
+            android:layout_width="150dp"
+            android:layout_height="130dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/main_unlock"
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="Onclick"/>
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/main_blue"
+            android:layout_width="150dp"
+            android:layout_height="130dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/main_bluelight"
+            android:layout_marginLeft="20dp"
+            android:onClick="Onclick"/>
+    </LinearLayout>
+
+</LinearLayout>

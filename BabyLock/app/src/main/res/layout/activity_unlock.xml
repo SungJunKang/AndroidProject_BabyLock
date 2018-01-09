@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kr.co.ana.babylock6.Unlock"
+    android:background="@drawable/unlock_main"
+    android:orientation="vertical">
+
+    <Switch
+        android:id="@+id/switch_use"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="60dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:checked="true" />
+
+    <Switch
+        android:id="@+id/switch_al"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="250dp"
+        android:checked="true"/>
+
+    <ImageView
+        android:id="@+id/music"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="70dp"
+        android:layout_width="240dp"
+        android:layout_height="35dp"
+        android:src="@drawable/unlock_music"/>
+
+    <SeekBar
+        android:id="@+id/seekbar_vol"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="80dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="50"
+        android:secondaryProgress="70"/>
+</LinearLayout>

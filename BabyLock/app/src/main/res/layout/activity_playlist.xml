@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kr.co.ana.babylock6.Playlist"
+    android:background="@drawable/list_background"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv3"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/blue_back"
+        android:onClick="Onclick"/>
+    <TextView
+        android:layout_marginTop="110dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Youtube 재생 목록의 키 값을 가져오세요"
+        android:layout_gravity="center"
+        android:textColor="#000000"
+        android:textSize="20dp"/>
+    <EditText
+        android:id="@+id/et_link"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="PLmkIxpTQ-fN_spFs8j7cyPFQLg93V3lzh"/>
+    <Button
+        android:id="@+id/btn_play"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="재생 및 화면 잠금"/>
+
+    <view
+        android:id="@+id/youtubeView"
+        class="com.google.android.youtube.player.YouTubePlayerView"
+        id="@+id/view"
+        layout_width="match_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

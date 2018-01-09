@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kr.co.ana.babylock6">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_babylock"
+        android:label="Baby Lock"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <receiver
+            android:name=".NetworkChangeReceiver"
+            android:label="NetworkChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Unlock" />
+        <activity android:name=".Playlist" />
+        <activity android:name=".Bluelight" />
+        <activity android:name=".Lock_data" />
+        <activity android:name=".Lock_gesture" />
+        <activity android:name=".Splash" />
+        <activity android:name=".Unlock_gesture" />
+        <activity android:name=".Unlockac2" />
+        <activity android:name=".Unlockac1" />
+        <activity android:name=".Unlockal1" />
+        <activity android:name=".Unlockal2" />
+        <activity android:name=".Unlockalv1" />
+        <activity android:name=".Unlockalv2" />
+        <activity android:name=".ge1" />
+        <activity android:name=".ge2" />
+        <activity android:name=".ge3" />
+        <activity android:name=".ge4" />
+        <activity android:name=".Unlock_TU"></activity>
+    </application>
+
+</manifest>
